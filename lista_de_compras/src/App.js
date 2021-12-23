@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Formulario from './Formulario';
-import Produto from './Produto';
+import Produto from './Formulario';
 
 class App extends Component {
   constructor(props){
@@ -25,7 +25,7 @@ class App extends Component {
   remover(indice){
     this.state.lista.splice(indice,1);
     this.setState({lista: this.state.lista});
-    console.log("teste");
+    console.log("deletou");
   }
 
   render() {
